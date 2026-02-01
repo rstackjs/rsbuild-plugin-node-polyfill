@@ -65,7 +65,7 @@
 		"@rsbuild/core": "^1.6.10",
 		"@rslib/core": "^0.18.2",
 		"@rstest/core": "0.6.8",
-		"@types/node": "^22.19.1",
+		"@types/node": "^24.10.9",
 		"nano-staged": "^0.9.0",
 		"playwright": "^1.57.0",
 		"simple-git-hooks": "^2.13.1",
