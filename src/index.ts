@@ -202,7 +202,7 @@ export function pluginNodePolyfill(
 		name: PLUGIN_NODE_POLYFILL_NAME,
 
 		setup(api) {
-			api.modifyBundlerChain(async (chain, { isServer, rspack }) => {
+			api.modifyBundlerChain(async (chain, { isServer, bundler, rspack }) => {
 				// The server bundle does not require node polyfill
 				if (isServer && !force) {
 					return;
@@ -226,12 +226,12 @@ export function pluginNodePolyfill(
 				if (Object.keys(provideGlobals).length) {
 					chain
 						.plugin('node-polyfill-provide')
-						.use(rspack.ProvidePlugin, [provideGlobals]);
+						.use(bundler.ProvidePlugin, [provideGlobals]);
 				}
 
 				// Remove the `node:` prefix
 				// see: https://github.com/webpack/webpack/issues/14166
-				if (protocolImports) {
+				if (protocolImports && api.context.bundlerType === 'rspack') {
 					const regex = /^node:/;
 					chain
 						.plugin('protocol-imports')
