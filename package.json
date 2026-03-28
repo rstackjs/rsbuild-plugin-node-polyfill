@@ -16,14 +16,14 @@
 	"types": "./dist/index.d.ts",
 	"files": ["dist"],
 	"scripts": {
-		"build": "rslib build",
-		"dev": "rslib build --watch",
+		"build": "rslib",
+		"dev": "rslib -w",
 		"lint": "biome check .",
 		"lint:write": "biome check . --write",
 		"prepare": "simple-git-hooks && npm run build",
 		"test": "pnpm run /^test:/",
 		"test:e2e": "playwright test",
-		"test:unit": "rstest run",
+		"test:unit": "rstest",
 		"bump": "npx bumpp"
 	},
 	"simple-git-hooks": {
