@@ -1,9 +1,8 @@
 import path from 'node:path';
-// biome-ignore lint: test non-import protocol
 import querystring from 'querystring';
 
 const qsRes = querystring.stringify({
-	foo: 'bar',
+  foo: 'bar',
 });
 
 document.querySelector('#root').innerHTML = `

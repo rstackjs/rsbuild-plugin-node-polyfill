@@ -28,7 +28,7 @@ Add plugin to your `rsbuild.config.ts`:
 
 ```ts
 // rsbuild.config.ts
-import { pluginNodePolyfill } from "@rsbuild/plugin-node-polyfill";
+import { pluginNodePolyfill } from '@rsbuild/plugin-node-polyfill';
 
 export default {
   plugins: [pluginNodePolyfill()],
@@ -47,7 +47,7 @@ When you use the above global variables in your code, the corresponding polyfill
 For instance, the following code would inject the `Buffer` polyfill:
 
 ```ts
-const bufferData = Buffer.from("abc");
+const bufferData = Buffer.from('abc');
 ```
 
 You can disable this behavior through the `globals` option of the plugin:
@@ -95,9 +95,9 @@ pluginNodePolyfill({
 When the above module is referenced in code via import / require syntax, the corresponding polyfill will be injected.
 
 ```ts
-import { Buffer } from "buffer";
+import { Buffer } from 'buffer';
 
-const bufferData = Buffer.from("abc");
+const bufferData = Buffer.from('abc');
 ```
 
 ### Fallbacks
@@ -117,7 +117,7 @@ const bufferData = Buffer.from("abc");
 Currently there is no polyfill for the above modules on the browser side, so when you import the above modules, it will automatically fallback to an empty object.
 
 ```ts
-import fs from "fs";
+import fs from 'fs';
 
 console.log(fs); // -> {}
 ```
@@ -210,7 +210,7 @@ Specify an array of modules for which polyfills should be injected. If this opti
 
 ```ts
 pluginNodePolyfill({
-  include: ["buffer", "crypto"], // Only "buffer" and "crypto" modules will be polyfilled.
+  include: ['buffer', 'crypto'], // Only "buffer" and "crypto" modules will be polyfilled.
 });
 ```
 
@@ -223,7 +223,7 @@ Specify an array of modules for which polyfills should not be injected from the 
 
 ```ts
 pluginNodePolyfill({
-  exclude: ["http", "https"], // All modules except "http" and "https" will be polyfilled.
+  exclude: ['http', 'https'], // All modules except "http" and "https" will be polyfilled.
 });
 ```
 
@@ -237,7 +237,7 @@ Override the default polyfills for specific modules.
 ```ts
 pluginNodePolyfill({
   overrides: {
-    fs: "memfs",
+    fs: 'memfs',
   },
 });
 ```
