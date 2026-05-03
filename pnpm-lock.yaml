@@ -82,17 +82,17 @@ importers:
         specifier: ^1.59.1
         version: 1.59.1
       '@rsbuild/core':
-        specifier: ^2.0.2
+        specifier: ^2.0.3
         version: 2.0.3(core-js@3.47.0)
       '@rslib/core':
         specifier: ^0.21.3
         version: 0.21.3(core-js@3.47.0)(typescript@6.0.3)
       '@rslint/core':
-        specifier: ^0.5.0
+        specifier: ^0.5.1
         version: 0.5.1(jiti@2.6.1)
       '@rstest/core':
-        specifier: 0.9.9
-        version: 0.9.9(core-js@3.47.0)
+        specifier: 0.9.10
+        version: 0.9.10(core-js@3.47.0)
       '@types/node':
         specifier: ^24.12.2
         version: 24.12.2
@@ -482,8 +482,8 @@ packages:
       '@swc/helpers':
         optional: true
 
-  '@rstest/core@0.9.9':
-    resolution: {integrity: sha512-AdlRgvyitoenjBTxlnYHr4rf71as96abmqVjmPXnfc0MyYk563AKMagHoWW5YMQKGCjRcrZx92dDRIUI0Z8Lyg==}
+  '@rstest/core@0.9.10':
+    resolution: {integrity: sha512-JUSUYYXWIHEBUn193u2RglZujvGPv46Blxpl17QFwc0y9vEXe2y/IfGwGrVsJfZz7PaWZ5NnbFf0J55YIIns+g==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1224,7 +1224,7 @@ snapshots:
     optionalDependencies:
       '@swc/helpers': 0.5.21
 
-  '@rstest/core@0.9.9(core-js@3.47.0)':
+  '@rstest/core@0.9.10(core-js@3.47.0)':
     dependencies:
       '@rsbuild/core': 2.0.3(core-js@3.47.0)
       '@types/chai': 5.2.3
