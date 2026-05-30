@@ -22,7 +22,7 @@
     "dev": "rslib -w",
     "lint": "rslint && prettier -c .",
     "lint:write": "rslint --fix && prettier -w .",
-    "prepare": "simple-git-hooks && pnpm run build",
+    "prepare": "simple-git-hooks",
     "test": "pnpm run /^test:/",
     "test:e2e": "playwright test",
     "test:unit": "rstest",
