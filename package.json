@@ -2,6 +2,10 @@
   "name": "@rsbuild/plugin-node-polyfill",
   "version": "1.4.6",
   "repository": "https://github.com/rstackjs/rsbuild-plugin-node-polyfill",
+  "homepage": "https://github.com/rstackjs/rsbuild-plugin-node-polyfill#readme",
+  "bugs": {
+    "url": "https://github.com/rstackjs/rsbuild-plugin-node-polyfill/issues"
+  },
   "license": "MIT",
   "type": "module",
   "exports": {
