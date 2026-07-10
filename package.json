@@ -27,9 +27,9 @@
     "lint": "rslint && prettier -c .",
     "lint:write": "rslint --fix && prettier -w .",
     "prepare": "simple-git-hooks",
-    "test": "pnpm run /^test:/",
-    "test:e2e": "rstest --config=rstest.e2e.config.ts",
-    "test:unit": "rstest",
+    "test": "rstest",
+    "test:e2e": "rstest --project=e2e",
+    "test:unit": "rstest --project=unit",
     "bump": "npx bumpp"
   },
   "simple-git-hooks": {
