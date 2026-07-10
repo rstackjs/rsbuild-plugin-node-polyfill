@@ -28,7 +28,7 @@
     "lint:write": "rslint --fix && prettier -w .",
     "prepare": "simple-git-hooks",
     "test": "pnpm run /^test:/",
-    "test:e2e": "playwright test",
+    "test:e2e": "rstest --config=rstest.e2e.config.ts",
     "test:unit": "rstest",
     "bump": "npx bumpp"
   },
@@ -61,11 +61,11 @@
     "vm-browserify": "^1.1.2"
   },
   "devDependencies": {
-    "@playwright/test": "^1.61.1",
     "@rsbuild/core": "^2.1.2",
     "@rslib/core": "^0.23.1",
     "@rslint/core": "^0.6.4",
-    "@rstest/core": "0.10.6",
+    "@rstest/core": "^0.11.1",
+    "@rstest/playwright": "^0.11.1",
     "@types/node": "^24.13.2",
     "playwright": "^1.61.1",
     "prettier": "^3.9.4",
