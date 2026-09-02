@@ -4,9 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prebuild": "pnpm --dir .. build",
     "build": "rs build",
-    "predev": "pnpm --dir .. build",
     "dev": "rs dev"
   }
 }
