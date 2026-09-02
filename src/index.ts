@@ -1,5 +1,5 @@
 import type { RsbuildPlugin } from '@rsbuild/core';
-import { builtinMappingResolved } from './libs.js';
+import { builtinMappingResolved } from './libs.ts';
 
 type GlobalsOption = {
   /**
@@ -247,4 +247,4 @@ export function pluginNodePolyfill(
   };
 }
 
-export { builtinMappingResolved, resolvedPolyfillToModules } from './libs.js';
+export { builtinMappingResolved, resolvedPolyfillToModules } from './libs.ts';

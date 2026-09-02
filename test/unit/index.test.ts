@@ -1,4 +1,4 @@
-import { assert, test } from '@rstest/core';
+import { assert, test } from 'rstack/test';
 import {
   builtinMappingResolved,
   getResolveFallback,
